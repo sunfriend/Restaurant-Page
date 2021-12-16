@@ -1,0 +1,26 @@
+.contacts-container {
+    padding: 2rem;
+    flex-direction: column;
+    width: 60%;
+    height: auto;
+    background-color: rgb(155, 211, 205);
+    border-radius: 12px;
+    margin: 2rem auto;
+    gap: 2rem;
+    align-items: center;
+}
+
+.contacts-container p {
+    font-size: 1.5rem;
+    border-bottom: 2px solid black;
+}
+
+.heading {
+    font-size: 2.5rem;
+}
+
+.map-container {
+    width: 90%;
+    height: 20rem;
+    border-radius: 20px;
+}

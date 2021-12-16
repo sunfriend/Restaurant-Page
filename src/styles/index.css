@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+:root {
+    --main-font: 'Satisfy', cursive, Tahoma, Sans-Serif;
+    --navbar-background-color: rgba(62, 169, 231, .5);
+    --navbar-text-color: rgb(241, 229, 161);
+    --navbar-hover-color: rgb(255, 196, 0);
+    --main-font-size: 3rem;
+    --header-section-background: linear-gradient(rgba(108, 200, 223, .6), rgba(108, 135, 223, .6));
+    --section-color: rgb(175, 245, 224);
+    --description-section-background: linear-gradient(rgba(125, 223, 108, 0.6),rgba(108, 223, 208, 0.6));
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--main-font);
+}
+
+.page-wrapper {
+    top: 0;
+    left: 0;
+    position: absolute;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("../images/background-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+.navbar {
+    width: 100%;
+    /* position: fixed; */
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 5rem;
+    padding: 1rem 5rem;
+    background: var(--navbar-background-color);
+    font-size: var(--main-font-size);
+}
+
+.navbar:hover {
+    background: var(--header-section-background);
+}
+
+.navbar-tab {
+    transition: all .3s ease-in-out;
+}
+
+.navbar-tab a {
+    text-decoration: none;
+    color: var(--navbar-text-color);
+}
+
+.navbar-tab a:hover {
+    color: var(--navbar-hover-color);
+}
+
+.navbar-tab:hover {
+    transform: scale(1.1);
+    
+}
+
+.page-data-container {
+    height: auto;
+    width: auto; 
+    margin: auto auto auto auto;
+}
+
+a.active{
+    border-bottom: 4px solid rgb(241, 229, 161);
+    border-top: 4px solid rgb(241, 229, 161);
+    border-radius: 12px;
+    transition: all .2s ease;
+    background-color: var(--navbar-background-color);
+}
+
+.hide {
+    display: none;
+}
+
+footer {
+    font-weight: 600;
+    text-align: center;
+    padding: 2rem;
+    background: var(--navbar-background-color);
+    font-size: 2rem;
+    text-shadow: 2px 2px wheat;
+}
